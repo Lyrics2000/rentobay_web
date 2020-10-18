@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'head.html' %}
+
+<body>
+<div class="mkdf-wrapper">
+<div class="mkdf-wrapper-inner">
+
+{% include 'header.html' %}
+
+{% include 'header-mobile.html' %}
+
+
+{% block content %}
+
+{% endblock %}
+
+{% include 'footer.html' %}
+{% block extra_scripts %}
+{% endblock %}
+
+</body>
+
+</html>
+
+
