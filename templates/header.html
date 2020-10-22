@@ -1,3 +1,6 @@
+
+{% load static %}
+
 <header class="mkdf-page-header">
 <div class="mkdf-menu-area mkdf-menu-left">
 <div class="mkdf-vertical-align-containers">
@@ -5,14 +8,14 @@
 <div class="mkdf-position-left-inner">
 <div class="mkdf-logo-wrapper">
 <a itemprop="url" href="index.htm" style="height: 16px;">
-<img itemprop="image" class="mkdf-normal-logo" src="wp-content\uploads\2017\11\logo-light.png" width="154" height="32" alt="logo">
-<img itemprop="image" class="mkdf-dark-logo" src="wp-content\uploads\2017\11\logo-light.png" width="154" height="32" alt="dark logo"> <img itemprop="image" class="mkdf-light-logo" src="wp-content\uploads\2017\11\logo-light.png" width="154" height="32" alt="light logo"> </a>
+<img itemprop="image" class="mkdf-normal-logo" src="{% static 'wp-content\uploads\2017\11\logo-light.png' %}" width="154" height="32" alt="logo">
+<img itemprop="image" class="mkdf-dark-logo" src="{% static 'wp-content\uploads\2017\11\logo-light.png' %}" width="154" height="32" alt="dark logo"> <img itemprop="image" class="mkdf-light-logo" src="{% static 'wp-content\uploads\2017\11\logo-light.png' %}" width="154" height="32" alt="light logo"> </a>
 </div>
 <nav class="mkdf-main-menu mkdf-drop-down mkdf-default-nav">
-<ul id="menu-main-menu" class="clearfix"><li id="nav-menu-item-1416" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home  narrow"><a href="index.htm" class=""><span class="item_outer"><span class="item_text">Home</span></span></a></li>
+<ul id="menu-main-menu" class="clearfix"><li id="nav-menu-item-1416" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-34 current_page_item mkdf-active-item narrow"><a href="index.htm" class=" current "><span class="item_outer"><span class="item_text">Home</span></span></a></li>
 <li id="nav-menu-item-184" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow"><a href="#" class=" no_link" onclick="JavaScript: return false;"><span class="item_outer"><span class="item_text">Pages</span><i class="mkdf-menu-arrow fa fa-angle-down"></i></span></a>
 <div class="second"><div class="inner"><ul>
-<li id="nav-menu-item-258" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="about-us\index.htm" class=""><span class="item_outer"><span class="item_text">About Us</span></span></a></li>
+<li id="nav-menu-item-258" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="{% url "about_us:index" %}" class=""><span class="item_outer"><span class="item_text">About Us</span></span></a></li>
 <li id="nav-menu-item-2381" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="process\index.htm" class=""><span class="item_outer"><span class="item_text">Process</span></span></a></li>
 <li id="nav-menu-item-541" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="pricing-packages\index.htm" class=""><span class="item_outer"><span class="item_text">Pricing Packages</span></span></a></li>
 <li id="nav-menu-item-257" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="contact-us\index.htm" class=""><span class="item_outer"><span class="item_text">Contact Us</span></span></a></li>
@@ -64,16 +67,16 @@
 </li>
 </ul></div></div>
 </li>
-<li id="nav-menu-item-186" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children mkdf-active-item has_sub narrow"><a href="#" class=" current  no_link" onclick="JavaScript: return false;"><span class="item_outer"><span class="item_text">Blog</span><i class="mkdf-menu-arrow fa fa-angle-down"></i></span></a>
+<li id="nav-menu-item-186" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow"><a href="#" class=" no_link" onclick="JavaScript: return false;"><span class="item_outer"><span class="item_text">Blog</span><i class="mkdf-menu-arrow fa fa-angle-down"></i></span></a>
 <div class="second"><div class="inner"><ul>
 <li id="nav-menu-item-2029" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="blog-standard\right-sidebar\index.htm" class=""><span class="item_outer"><span class="item_text">Right Sidebar</span></span></a></li>
 <li id="nav-menu-item-2027" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="blog-standard\left-sidebar\index.htm" class=""><span class="item_outer"><span class="item_text">Left Sidebar</span></span></a></li>
 <li id="nav-menu-item-2026" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="blog-standard\without-sidebar\index.htm" class=""><span class="item_outer"><span class="item_text">Without Sidebar</span></span></a></li>
-<li id="nav-menu-item-459" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children sub"><a href="#" class=""><span class="item_outer"><span class="item_text">Post Types</span></span></a>
+<li id="nav-menu-item-459" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sub"><a href="#" class=""><span class="item_outer"><span class="item_text">Post Types</span></span></a>
 <ul>
 <li id="nav-menu-item-451" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="dedicated-to-results\index.htm" class=""><span class="item_outer"><span class="item_text">Standard</span></span></a></li>
 <li id="nav-menu-item-455" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="creating-real-value-in-property-and-places\index.htm" class=""><span class="item_outer"><span class="item_text">Gallery</span></span></a></li>
-<li id="nav-menu-item-452" class="menu-item menu-item-type-post_type menu-item-object-post current-menu-item "><a href="matilda-morton\index.htm" class=""><span class="item_outer"><span class="item_text">Quote</span></span></a></li>
+<li id="nav-menu-item-452" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="matilda-morton\index.htm" class=""><span class="item_outer"><span class="item_text">Quote</span></span></a></li>
 <li id="nav-menu-item-454" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="no-one-has-more-experience-to-help-you-than-an-agent-who-is-a-realtor\index.htm" class=""><span class="item_outer"><span class="item_text">Link</span></span></a></li>
 <li id="nav-menu-item-453" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="the-sign-of-experience\index.htm" class=""><span class="item_outer"><span class="item_text">Audio</span></span></a></li>
 <li id="nav-menu-item-456" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="a-vision-for-your-life\index.htm" class=""><span class="item_outer"><span class="item_text">Video</span></span></a></li>
@@ -166,25 +169,25 @@
 <div class="mkdf-sticky-header">
 <div class="mkdf-sticky-holder">
 <div class=" mkdf-vertical-align-containers">
- <div class="mkdf-position-left">
+<div class="mkdf-position-left">
 <div class="mkdf-position-left-inner">
 <div class="mkdf-logo-wrapper">
 <a itemprop="url" href="index.htm" style="height: 16px;">
-<img itemprop="image" class="mkdf-normal-logo" src="wp-content\uploads\2017\11\logo-light.png" width="154" height="32" alt="logo">
-<img itemprop="image" class="mkdf-dark-logo" src="wp-content\uploads\2017\11\logo-light.png" width="154" height="32" alt="dark logo"> <img itemprop="image" class="mkdf-light-logo" src="wp-content\uploads\2017\11\logo-light.png" width="154" height="32" alt="light logo"> </a>
+<img itemprop="image" class="mkdf-normal-logo" src="{% static 'wp-content\uploads\2017\11\logo-light.png' %}" width="154" height="32" alt="logo">
+<img itemprop="image" class="mkdf-dark-logo" src="{% static 'wp-content\uploads\2017\11\logo-light.png' %}" width="154" height="32" alt="dark logo"> <img itemprop="image" class="mkdf-light-logo" src="{% static 'wp-content\uploads\2017\11\logo-light.png' %}" width="154" height="32" alt="light logo"> </a>
 </div>
 </div>
 </div>
 <div class="mkdf-position-right">
 <div class="mkdf-position-right-inner">
 <nav class="mkdf-main-menu mkdf-drop-down mkdf-sticky-nav">
-<ul id="menu-main-menu-1" class="clearfix"><li id="sticky-nav-menu-item-1416" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home  narrow"><a href="index.htm" class=""><span class="item_outer"><span class="item_text">Home</span><span class="plus"></span></span></a></li>
+<ul id="menu-main-menu-1" class="clearfix"><li id="sticky-nav-menu-item-1416" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-34 current_page_item mkdf-active-item narrow"><a href="index.htm" class=" current "><span class="item_outer"><span class="item_text">Home</span><span class="plus"></span></span></a></li>
 <li id="sticky-nav-menu-item-184" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow"><a href="#" class=" no_link" onclick="JavaScript: return false;"><span class="item_outer"><span class="item_text">Pages</span><span class="plus"></span><i class="mkdf-menu-arrow fa fa-angle-down"></i></span></a>
 <div class="second"><div class="inner"><ul>
 <li id="sticky-nav-menu-item-258" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="about-us\index.htm" class=""><span class="item_outer"><span class="item_text">About Us</span><span class="plus"></span></span></a></li>
 <li id="sticky-nav-menu-item-2381" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="process\index.htm" class=""><span class="item_outer"><span class="item_text">Process</span><span class="plus"></span></span></a></li>
 <li id="sticky-nav-menu-item-541" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="pricing-packages\index.htm" class=""><span class="item_outer"><span class="item_text">Pricing Packages</span><span class="plus"></span></span></a></li>
-<li id="sticky-nav-menu-item-257" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="contact-us\index.htm" class=""><span class="item_outer"><span class="item_text">Contact Us</span><span class="plus"></span></span></a></li>
+ <li id="sticky-nav-menu-item-257" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="contact-us\index.htm" class=""><span class="item_outer"><span class="item_text">Contact Us</span><span class="plus"></span></span></a></li>
 <li id="sticky-nav-menu-item-1350" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="https://zuhaus.qodeinteractive.com/error-page" class=""><span class="item_outer"><span class="item_text">404 Error Page</span><span class="plus"></span></span></a></li>
 </ul></div></div>
 </li>
@@ -233,16 +236,16 @@
 </li>
 </ul></div></div>
 </li>
-<li id="sticky-nav-menu-item-186" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children mkdf-active-item has_sub narrow"><a href="#" class=" current  no_link" onclick="JavaScript: return false;"><span class="item_outer"><span class="item_text">Blog</span><span class="plus"></span><i class="mkdf-menu-arrow fa fa-angle-down"></i></span></a>
+<li id="sticky-nav-menu-item-186" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow"><a href="#" class=" no_link" onclick="JavaScript: return false;"><span class="item_outer"><span class="item_text">Blog</span><span class="plus"></span><i class="mkdf-menu-arrow fa fa-angle-down"></i></span></a>
 <div class="second"><div class="inner"><ul>
 <li id="sticky-nav-menu-item-2029" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="blog-standard\right-sidebar\index.htm" class=""><span class="item_outer"><span class="item_text">Right Sidebar</span><span class="plus"></span></span></a></li>
 <li id="sticky-nav-menu-item-2027" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="blog-standard\left-sidebar\index.htm" class=""><span class="item_outer"><span class="item_text">Left Sidebar</span><span class="plus"></span></span></a></li>
 <li id="sticky-nav-menu-item-2026" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="blog-standard\without-sidebar\index.htm" class=""><span class="item_outer"><span class="item_text">Without Sidebar</span><span class="plus"></span></span></a></li>
-<li id="sticky-nav-menu-item-459" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children sub"><a href="#" class=""><span class="item_outer"><span class="item_text">Post Types</span><span class="plus"></span></span></a>
+<li id="sticky-nav-menu-item-459" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sub"><a href="#" class=""><span class="item_outer"><span class="item_text">Post Types</span><span class="plus"></span></span></a>
 <ul>
 <li id="sticky-nav-menu-item-451" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="dedicated-to-results\index.htm" class=""><span class="item_outer"><span class="item_text">Standard</span><span class="plus"></span></span></a></li>
 <li id="sticky-nav-menu-item-455" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="creating-real-value-in-property-and-places\index.htm" class=""><span class="item_outer"><span class="item_text">Gallery</span><span class="plus"></span></span></a></li>
-<li id="sticky-nav-menu-item-452" class="menu-item menu-item-type-post_type menu-item-object-post current-menu-item "><a href="matilda-morton\index.htm" class=""><span class="item_outer"><span class="item_text">Quote</span><span class="plus"></span></span></a></li>
+<li id="sticky-nav-menu-item-452" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="matilda-morton\index.htm" class=""><span class="item_outer"><span class="item_text">Quote</span><span class="plus"></span></span></a></li>
 <li id="sticky-nav-menu-item-454" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="no-one-has-more-experience-to-help-you-than-an-agent-who-is-a-realtor\index.htm" class=""><span class="item_outer"><span class="item_text">Link</span><span class="plus"></span></span></a></li>
 <li id="sticky-nav-menu-item-453" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="the-sign-of-experience\index.htm" class=""><span class="item_outer"><span class="item_text">Audio</span><span class="plus"></span></span></a></li>
 <li id="sticky-nav-menu-item-456" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="a-vision-for-your-life\index.htm" class=""><span class="item_outer"><span class="item_text">Video</span><span class="plus"></span></span></a></li>
